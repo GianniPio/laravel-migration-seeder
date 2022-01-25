@@ -17,8 +17,8 @@ class CreateAlbumTable extends Migration
             $table->id();
             $table->string('name', 50);
             $table->date('year');
-            $table->string('artist', 30);
-            $table->integer('number_song');
+            $table->integer('id_artist');
+            $table->integer('id_song');
             $table->timestamps();
         });
     }
